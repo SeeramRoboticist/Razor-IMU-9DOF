@@ -94,7 +94,7 @@ imuMsg.linear_acceleration_covariance = [
 
 # read basic information
 port = rospy.get_param('~port', '/dev/ttyUSB0')
-topic = rospy.get_param('~topic', 'imu')
+topic = rospy.get_param('~topic', 'imu/data')
 frame_id = rospy.get_param('~frame_id', 'base_imu_link')
 
 # read calibration parameters
