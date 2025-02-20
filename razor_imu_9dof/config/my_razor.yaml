@@ -1,7 +1,7 @@
 ## USB port
 port: /dev/ttyACM0
 topic: imu
-frame_id: base_footprint
+frame_id: imu_link
 
 ##### Calibration ####
 ### accelerometer
@@ -30,6 +30,6 @@ magn_ellipsoid_transform: [[0.9403140,0.0498673,0.0290085],[0.0498673,0.9582150,
 imu_yaw_calibration: 0.0
 
 ### gyroscope
-gyro_average_offset_x: 0.0
-gyro_average_offset_y: 0.0
-gyro_average_offset_z: 0.0
+gyro_average_offset_x: -0.04
+gyro_average_offset_y: 0.06
+gyro_average_offset_z: 0.01
